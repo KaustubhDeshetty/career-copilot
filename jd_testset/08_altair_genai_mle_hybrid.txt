@@ -1,0 +1,23 @@
+Applied Scientist, Language Models
+Altair Legal Technologies · New York, NY
+
+Altair builds contract review software for large law firms. Our models read a contract and flag clauses that deviate from a firm's playbook.
+
+The problem
+General-purpose language models are mediocre at this. Legal language is adversarially precise, playbooks differ per firm, and a false negative is a malpractice exposure. Getting from "impressive demo" to "a partner will sign off on this" is the entire technical challenge of the company.
+
+You will
+- Adapt open-weight models to the legal domain: continued pretraining on our licensed corpus, supervised fine-tuning on annotated clause data, and preference tuning against attorney feedback
+- Build the evaluation that tells us whether any of it worked. We have 12,000 attorney-annotated clauses and we need a harness that turns them into a number we trust
+- Train and maintain the smaller classification models that sit alongside the generative path — clause typing, deviation scoring, confidence estimation
+- Run careful ablations. We need to know whether the gain came from the data, the method, or the seed
+- Work directly with our attorney annotators to improve label quality, which is usually the highest-leverage thing available
+
+Requirements
+- 4+ years in applied ML with real training experience — you have run a training job that failed for interesting reasons and fixed it
+- Strong PyTorch. Comfortable with the fine-tuning stack: LoRA, full fine-tuning, DPO or similar
+- Rigorous about evaluation and skeptical of your own results
+- Experience with both generative and discriminative modeling
+- Publications welcome but production impact matters more
+
+This is a modeling role, not an infrastructure role. We have a platform team.

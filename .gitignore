@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Secrets and personal data
+# ---------------------------------------------------------------------------
+# The real resume and derived profile contain a real name, phone number and
+# email address. They stay local. Sanitised equivalents are committed as
+# *.sample.* so a cloner can run the pipeline end to end.
+resume.txt
+resumes.json
+user_profile.json
+applications.xlsx
+
+.env
+.env.local
+*.key
+
+# ---------------------------------------------------------------------------
+# Generated / derived
+# ---------------------------------------------------------------------------
+# Chroma indexes rebuild from class_notes/ and the HF dataset on first run.
+chroma_db_*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Local notes and large media
+# ---------------------------------------------------------------------------
+# Demo recordings are large; linked from the README instead of committed.
+Clips-Demo/
+*.mp4
+
+# OneDrive sync-conflict debris from a previous location.
+*-KaustubhROG*
+_backup_*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Internal working docs — kept locally, not part of the public repo
+# ---------------------------------------------------------------------------
+# Rule of thumb: docs about the ENGINEERING ship (PROGRESS, HANDOFF,
+# PHASE2_DESIGN). Docs about running a demo or about this particular machine
+# do not — PROJECT_STATE.md contains local paths and recovery instructions.
+PROJECT_STATE.md
+VERIFICATION.md
+SCRIPT.md
+SCRIPT_debugging_journey.md
+
+# scratch from a pre-publish audit
+_tmp_deckcheck/

@@ -1,0 +1,97 @@
+Alex Rivera
+Senior Machine Learning Engineer
+
+Phone: 555-0100 || Mail: alex.rivera@example.com
+LinkedIn: linkedin.com/in/example
+
+  Professional Summary
+
+Machine Learning Engineer with 9+ years of experience turning data systems
+into production services. Works across LLM application development, retrieval
+systems, and classical ML, with a focus on getting models from prototype into
+reliable production deployment.
+
+  Technology Stack
+
+  Generative AI &   GPT-class models, LangChain, LlamaIndex, BERT
+  LLMs
+
+  LLM Strategy &    RAG, hybrid search, quantization, LoRA/QLoRA, PEFT
+  Optimization
+
+  ML & Deep         PyTorch, TensorFlow, XGBoost, LightGBM, Scikit-learn,
+  Learning          Pandas, NumPy
+
+  Vector & Data     Chroma, FAISS, pgvector, Postgres
+  Storage
+
+  MLOps &           MLflow, Weights & Biases, Pytest, Prometheus
+  Observability
+
+  Inference &       FastAPI, Docker, Kubernetes, GitHub Actions
+  Deployment
+
+  Data Engineering  PySpark, Kafka, SQL, ETL pipeline design
+
+  Cloud Platforms   AWS (SageMaker), Azure Machine Learning
+
+  Languages         Python, Go, SQL
+
+  Professional Experience
+
+  Northwind Data, Remote                          June 2021 - Present
+
+  Senior Machine Learning Engineer
+
+-   Built retrieval-augmented generation systems over enterprise document
+    sets, combining vector and keyword retrieval to reduce ungrounded answers.
+
+-   Fine-tuned open-weight language models using LoRA and QLoRA to adapt them
+    to domain-specific vocabulary.
+
+-   Developed asynchronous inference APIs with FastAPI, packaged in Docker and
+    deployed on Kubernetes.
+
+-   Reduced model memory footprint through quantization, cutting serving cost
+    for a production recommendation service.
+
+-   Governed the model lifecycle with MLflow, tracking experiments and
+    versioning models from research through to production.
+
+-   Automated the deployment pipeline with GitHub Actions, adding evaluation
+    gates that run before every release.
+
+  Corvid Analytics, Austin TX                     Mar 2017 - May 2021
+
+  Machine Learning Engineer
+
+-   Trained and tuned gradient-boosted models for tabular prediction, improving
+    holdout AUC by 12% over the previous baseline.
+
+-   Built ETL pipelines in Python and PySpark processing several terabytes of
+    event data per week.
+
+-   Deployed scikit-learn models as serverless endpoints, providing a
+    cost-effective inference layer for low-volume predictions.
+
+-   Applied PCA and t-SNE to high-dimensional feature spaces to help analysts
+    interpret model behaviour.
+
+  Meridian Systems, Austin TX                     Aug 2015 - Feb 2017
+
+  Data Engineer
+
+-   Designed ETL workflows with Python and Airflow feeding a cloud data lake.
+
+-   Built REST APIs in Flask to expose stored datasets to internal consumers.
+
+-   Wrote validation scripts that profiled incoming data and flagged schema
+    drift before it reached downstream models.
+
+  Certifications
+
+-   AWS Certified Machine Learning - Specialty
+
+  Education
+
+-   B.S. in Computer Science

@@ -1,0 +1,42 @@
+# Career Copilot -- runtime dependencies
+#
+# Lower bounds rather than exact pins: these are the floors the code actually
+# needs, verified against what each import uses. Pinning to one exact patch
+# release would make this file lie the moment anything is upgraded, and none
+# of these libraries has a known-bad newer release for this codebase.
+#
+#   pip install -r requirements.txt
+#
+# Windows note: numpy ships a compiled DLL (mtrand.pyd) that Smart App Control
+# has been observed blocking on a fresh machine. If numpy import fails with a
+# DLL error, that is the cause -- not a broken install.
+
+# --- LLM client -------------------------------------------------------------
+# Every model call in the project goes through this one client (agents.py).
+# reasoning_effort / max_completion_tokens both require a reasonably recent SDK.
+groq>=0.11.0
+
+# --- RAG stack --------------------------------------------------------------
+# langchain-core supplies Document; langchain-community supplies the Chroma
+# vector store wrapper and HuggingFaceEmbeddings -- see rag_utils.py.
+# Note: langchain-community's Chroma import is soft-deprecated in favour of the
+# separate langchain-chroma package. It still works and is deliberately left
+# alone here; migrating is a post-demo change, not a same-week one.
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# Loads the SciFact and mjphayes/machine_learning_questions corpora.
+datasets>=2.19.0
+
+# --- UI + tracker -----------------------------------------------------------
+# st.container(border=True) needs 1.29+; hide_index/use_container_width on
+# st.dataframe are guarded with a try/except in app.py for older installs.
+streamlit>=1.31.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# --- Web API (api.py) for the Next.js front end in web/ ---------------------
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0

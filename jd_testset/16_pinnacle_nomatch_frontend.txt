@@ -1,0 +1,23 @@
+Senior Frontend Engineer
+Pinnacle Fitness · Remote (US)
+
+Pinnacle is a connected fitness company. Our members use our app on phone, tablet, and TV to follow guided workouts. We are hiring a senior engineer onto the Member Experience team.
+
+What you'll work on
+- Our React and TypeScript web application, plus the TV app that shares much of its component layer
+- Rebuilding the workout player. The current one has accumulated five years of feature flags and needs to be replaced without disrupting daily active users
+- Performance: our time-to-interactive on lower-end TV hardware is poor and it correlates with churn
+- Accessibility. We have committed to WCAG 2.2 AA and are not there yet
+- Our design system, shared across four product surfaces, in partnership with the design team
+- Instrumentation and experimentation on the client side
+
+We're looking for
+- 5+ years frontend engineering, with deep React
+- Strong TypeScript and comfort with a large existing codebase
+- Real performance work — you have profiled a slow render and fixed it, not just added memoization everywhere
+- Testing discipline: unit, component, and end-to-end
+- An eye for detail in the UI. Our members notice
+
+Nice to have: streaming video playback experience, React Native, prior work on TV platforms (tvOS, Android TV, Roku).
+
+$170,000-$210,000 plus equity. Fully remote within the US.

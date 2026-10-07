@@ -1,0 +1,22 @@
+Data Scientist
+Orchard Home Goods · Columbus, OH
+
+Orchard is a home furnishings retailer with 90 stores and a growing online business. We are hiring a Data Scientist into our Commercial Analytics team.
+
+What you'll do
+- Build and maintain the dbt models that power our merchandising and marketing reporting layer
+- Own our Looker semantic layer — explores, dimension definitions, and making sure two people asking the same question get the same number
+- Partner with merchandising on weekly business reviews: what sold, what didn't, what the buy should be next season
+- Run ad hoc analyses on assortment performance, markdown effectiveness, and promotional lift
+- Build and maintain dashboards used by store operations leadership
+- Improve data quality in the reporting layer and document lineage
+
+What we're looking for
+- 3+ years in analytics, business intelligence, or analytics engineering
+- Excellent SQL. This is the core skill for this role
+- dbt experience strongly preferred
+- A BI tool in depth — Looker, Tableau, or Power BI
+- Strong communication. You will present to non-technical leaders weekly and the presentation is the deliverable
+- Python for analysis is useful; production Python engineering is not required
+
+Note on the title: we call this role Data Scientist for internal leveling reasons. The work is analytics and analytics engineering. There is no machine learning model development in this role and we do not want to mislead candidates about that.

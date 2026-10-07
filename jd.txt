@@ -1,0 +1,35 @@
+Senior Machine Learning Engineer — LLM Platform
+Meridian AI
+
+About Meridian AI: Meridian AI builds enterprise-grade AI infrastructure that helps Fortune 500 companies deploy large language models safely and efficiently at scale. Our platform processes over 50 million inference requests daily across financial services, healthcare, and retail clients.
+
+Role Summary: We are seeking a Senior Machine Learning Engineer to join our LLM Platform team. You will own the full lifecycle of our model serving infrastructure, from fine-tuning open-weight models to deploying them in production environments with strict latency and reliability requirements.
+
+Responsibilities:
+- Design and implement fine-tuning pipelines for large language models using PyTorch, including LoRA and QLoRA approaches for parameter-efficient adaptation
+- Architect production-grade model serving infrastructure capable of handling high request volumes with low latency
+- Build and maintain retrieval-augmented generation systems that ground model outputs in enterprise knowledge bases
+- Optimize inference performance through quantization, distillation, and hardware acceleration techniques
+- Establish MLOps practices including experiment tracking, model versioning, and automated evaluation pipelines
+- Implement observability and monitoring systems to detect model drift and performance degradation in production
+- Collaborate with data engineering teams to build scalable data pipelines supporting model training
+- Mentor junior engineers and contribute to technical architecture decisions
+- Partner with product and customer-facing teams to translate business requirements into technical solutions
+- Ensure ML systems meet security, compliance, and reliability standards for enterprise clients
+
+Required Qualifications:
+- 5+ years of professional experience building and deploying machine learning systems in production
+- Deep hands-on experience with PyTorch for model development and fine-tuning
+- Demonstrated experience fine-tuning large language models, including parameter-efficient methods such as LoRA or QLoRA
+- Experience deploying ML models to production using containerization (Docker) and orchestration (Kubernetes)
+- Strong understanding of MLOps practices, including experiment tracking and CI/CD for machine learning
+- Experience building APIs for model serving using frameworks such as FastAPI
+- Proficiency in Python and familiarity with distributed computing frameworks
+- Bachelor's degree in Computer Science, Engineering, or a related field, or equivalent practical experience
+
+Preferred Qualifications:
+- Experience with retrieval-augmented generation and vector databases
+- Familiarity with model quantization and inference acceleration tools such as TensorRT or Triton
+- Experience working with cloud ML platforms such as AWS SageMaker or Azure Machine Learning
+- Prior experience in a regulated industry such as financial services or healthcare
+- Track record of mentoring engineers or leading technical initiatives

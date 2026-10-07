@@ -1,0 +1,17 @@
+# Streamlit config -- demo hygiene.
+#
+# Streamlit's default file watcher walks the __path__ of every imported module
+# to decide what to hot-reload. sentence-transformers pulls in transformers,
+# which lazily exposes ~60 image-processing modules that import torchvision.
+# torchvision isn't installed (and isn't needed -- nothing here touches vision),
+# so startup prints a full multi-line traceback for each one.
+#
+# None of that affects the app. But it scrolls for pages and buries the
+# [Router] -> mode=... and [Researcher tool call] lines, which are exactly what
+# you want visible when demoing how the pipeline routes and retrieves.
+#
+# Trade-off: "none" disables auto-reload on save. Edit code, restart Streamlit
+# manually. That is the right trade during a demo; flip back to "auto" while
+# actively developing.
+[server]
+fileWatcherType = "none"

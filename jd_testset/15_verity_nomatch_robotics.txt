@@ -1,0 +1,23 @@
+Perception Engineer, Autonomy
+Verity Autonomous Systems · Boulder, CO (Onsite)
+
+Verity builds autonomous inspection drones for utility infrastructure. Our aircraft fly beyond visual line of sight over transmission corridors and must navigate without GPS in some environments.
+
+The Perception team owns how the aircraft understands where it is and what is around it.
+
+You will
+- Develop and improve our visual-inertial odometry stack, including front-end feature tracking and back-end optimization
+- Work on sensor fusion across camera, IMU, LiDAR, and barometric altimetry, including calibration and time synchronization
+- Improve obstacle detection and avoidance in cluttered environments — conductor wires are our hardest case and remain unsolved at range
+- Build and maintain the simulation and replay tooling used to regression-test perception changes against logged flights
+- Analyze flight logs after anomalies and determine whether perception was the cause
+- Support flight test campaigns in the field, including early-morning launches
+
+Requirements
+- MS or PhD in robotics, computer vision, or a related field, or equivalent experience
+- Strong C++. Our flight-side perception code is C++17 and performance-constrained
+- Solid grounding in 3D geometry, state estimation, and optimization — you are comfortable with factor graphs, and you know why a Kalman filter diverges
+- Experience with ROS or a comparable robotics middleware
+- Comfort with hardware: you will be on the flight line
+
+Nice to have: FAA Part 107, experience with embedded GPU targets, prior work on certification evidence for aviation software.

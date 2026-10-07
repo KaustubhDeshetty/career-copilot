@@ -1,0 +1,21 @@
+Senior MLOps Engineer, AWS
+Kestrel Insurance · Des Moines, IA (Remote-friendly, quarterly onsite)
+
+Kestrel underwrites commercial property. Our actuarial and claims teams have built up a portfolio of models that currently reach production through a process best described as "a notebook and hope." We are standardizing on AWS and hiring an engineer to own that standardization.
+
+Scope
+- Build our ML platform on SageMaker: Pipelines for training orchestration, Model Registry for versioning and approval, Endpoints for real-time and Batch Transform for scoring runs
+- Implement the approval workflow our model risk governance function requires — no model reaches production without a recorded validation and a named approver
+- Instrument monitoring with SageMaker Model Monitor plus custom CloudWatch metrics; drift on a rating model is a regulatory issue, not just a quality one
+- Automate everything with CDK and CodePipeline. Manual console changes are not acceptable in our environment
+- Own cost. SageMaker endpoint sprawl is real and we already have some
+- Train the data science team to use the platform. Adoption is part of the job, not an afterthought
+
+Required
+- 4+ years MLOps or ML platform engineering
+- Deep AWS. Specifically SageMaker's actual behavior, not just its marketing surface — you know what Pipelines does badly
+- IaC with CDK or Terraform, and CI/CD ownership
+- Python
+- Comfort working inside a model risk management framework, or willingness to learn quickly
+
+Insurance experience not required. Regulated-industry experience helps.

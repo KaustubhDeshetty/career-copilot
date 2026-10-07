@@ -1,0 +1,25 @@
+Senior AI Engineer, Applied LLM
+Helix Health · Boston, MA (Hybrid, 3 days onsite)
+
+Helix Health builds clinical documentation software used by 400+ hospital systems. Our Ambient Notes product listens to a patient encounter and drafts the clinical note; clinicians edit and sign it. We are hiring onto the team that owns the generation quality of that draft.
+
+What you'll do
+- Own the retrieval layer that grounds generated notes in the patient's chart history, prior encounters, and our clinical terminology store
+- Reduce unsupported statements in generated notes. This is our single most-watched metric and the reason the role exists
+- Design and run evaluation: build rubrics, wire up LLM-as-judge with human spot-checks, and make regression suites that block a release
+- Fine-tune open-weight models on de-identified encounter data where a hosted model underperforms; we currently run a mix of hosted and self-hosted
+- Work with clinical informaticists to turn "this note reads wrong" into something measurable
+
+What we're looking for
+- 5+ years engineering, with at least 2 building on top of language models in production
+- Real experience with retrieval systems — chunking strategy, hybrid retrieval, reranking, and the failure modes of each
+- You have shipped an evaluation harness that someone other than you actually trusted
+- Comfortable with prompt and context design as engineering, not as guesswork
+- Python. Familiarity with PyTorch for adaptation work is a plus but you will not be training from scratch
+
+Nice to have
+- Healthcare or another regulated domain
+- Parameter-efficient fine-tuning experience
+- Published or spoken about evaluation methodology
+
+We are a Series C company of 300 people. Compensation $190,000-$240,000 plus equity. Helix Health is an equal opportunity employer.

@@ -1,0 +1,23 @@
+Machine Learning Platform Engineer
+Northwind Logistics · Remote (US)
+
+Northwind moves freight. We have 40-odd models in production doing ETA prediction, load matching, pricing, and fraud screening, owned by six different data science teams. Nobody owns how those models get to production or what happens to them afterward. That is the job.
+
+Responsibilities
+- Own the deployment path: a data scientist merges a model and it reaches production without a platform engineer in the loop
+- Run and extend our model registry and experiment tracking (MLflow today)
+- Build monitoring for the fleet — input drift, prediction drift, latency, and cost per model, with alerting that people actually respond to
+- Own the serving infrastructure: containerized inference behind an internal API, autoscaled on EKS
+- Add automated gates to CI so a model that regresses on the holdout set cannot ship
+- Participate in a weekly on-call rotation covering model-serving incidents
+
+Requirements
+- 4+ years in a platform, infrastructure, or DevOps role, with at least 2 of it around ML systems
+- Strong Kubernetes and container fundamentals. You have debugged a production pod, not just deployed one
+- CI/CD pipeline ownership (we use GitHub Actions)
+- Python, plus enough Terraform to be dangerous
+- You have opinions about reproducibility and can defend them
+
+You will not be building models here. You will be making it possible for forty of them to run without anyone's weekend being ruined. If that sounds like a demotion, this is not the role for you; if it sounds like the actual problem, let's talk.
+
+$165,000-$205,000. Fully remote, US time zones.

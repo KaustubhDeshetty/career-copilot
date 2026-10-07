@@ -1,0 +1,21 @@
+AI Architect
+Beacon Media Group · Los Angeles, CA
+
+Beacon is a streaming and publishing company. We are hiring an AI Architect for our Content Intelligence group.
+
+Despite the title this is a hands-on engineering role. You will be the most senior individual contributor on a five-person team and you will spend most of your week writing code.
+
+What you'll build
+- The retrieval system behind our editorial research assistant, which lets producers search 40 years of archive footage, transcripts, and rights metadata by description
+- Agentic workflows that chain retrieval, summarization, and rights-checking into something an editor can use without a manual
+- Our prompt and context management layer — versioned, tested, and not scattered through the codebase in string literals
+- Evaluation for generation quality, because "the summary was wrong about who said it" is a real complaint we get
+- Fine-tuning where the hosted models fall down on our domain vocabulary
+
+What we need
+- 7+ years engineering, with 2+ deep in LLM application work
+- You have built a retrieval system that worked on messy real-world data, not a clean benchmark
+- Comfortable owning technical direction for a small team without a management layer
+- Python, and the practical half of the ML stack
+
+To be explicit, since the title misleads: there is no pre-sales component, you will not be producing architecture documents for other teams to implement, and you will not be managing anyone. You will be building the thing.

@@ -1,0 +1,23 @@
+Feature Platform Engineer
+Solstice Payments · Austin, TX
+
+Solstice processes card payments for online merchants. Fraud decisioning happens in under 80 milliseconds and depends on features computed over a customer's history.
+
+The team owns the feature platform: how features are defined, computed, stored, served at low latency, and kept consistent between training and inference.
+
+Responsibilities
+- Own our feature store — definitions, materialization jobs, online and offline stores, point-in-time correctness
+- Build streaming aggregation pipelines. Card velocity features are computed over Kafka streams with strict latency budgets
+- Eliminate training/serving skew. Today we have two implementations of several features and the divergence has caused at least one incident
+- Serve features at p99 under 15ms from our online store
+- Backfill infrastructure so a data scientist can define a new feature and get correct historical values without engineering help
+- Partner with the fraud modeling team on what to build next; you are their platform, not their manager
+
+Requirements
+- 4+ years data engineering or ML platform work
+- Strong streaming background — Kafka, Flink or Spark Structured Streaming
+- Low-latency serving systems, ideally with a key-value store like Redis or DynamoDB under load
+- Understanding of why point-in-time correctness matters and what breaks without it
+- Python and Scala or Java
+
+You will work adjacent to ML models constantly and will need to understand them, but you will not be training them.

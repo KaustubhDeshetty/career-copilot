@@ -1,0 +1,22 @@
+Machine Learning Engineer, Ranking
+Lumen Marketplace · Seattle, WA
+
+Lumen is a marketplace for secondhand goods with 30 million monthly buyers. The Ranking team owns what a buyer sees in search results and in the home feed. Small ranking wins are worth a lot of money here.
+
+You will
+- Own models end to end: problem framing, feature engineering, training, offline evaluation, online experiment, and the decision to ship or roll back
+- Improve our ranker. Today it is a gradient-boosted model over roughly 300 features with a neural retrieval stage in front of it
+- Design and analyze A/B tests. You will be expected to defend a metric movement in a review where people push back hard
+- Build features from behavioral and catalog data, and reason carefully about training/serving skew
+- Investigate model failures — why does this query return junk, and is it the retrieval stage or the ranker
+
+Requirements
+- 3+ years training and shipping ML models that served real traffic
+- Strong grounding in the fundamentals: you can explain why your offline AUC improvement did not translate online, and what you'd check
+- Practical experience with gradient-boosted trees (XGBoost, LightGBM) and at least one deep learning framework
+- Solid experimentation and statistics. We will ask you to critique a flawed experiment design
+- Python and SQL
+
+What this role is not: we have a separate platform team that owns serving infrastructure and a separate GenAI team working on listing generation. You will be focused on ranking model quality.
+
+$180,000-$225,000 plus equity and annual bonus.

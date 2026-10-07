@@ -1,0 +1,21 @@
+Cloud AI Engineer — Azure
+Borealis Financial Services · Charlotte, NC (Onsite 4 days)
+
+Borealis is a $90B asset manager. We are two years into consolidating AI workloads onto Azure under a single governed landing zone, and we need engineers who know that platform deeply.
+
+What the job is
+- Build and operate AI workloads natively on Azure: Azure Machine Learning workspaces, Azure OpenAI deployments, Azure AI Search for retrieval
+- Design within our security boundary — private endpoints, managed identities, customer-managed keys, no public egress. Every service you stand up must pass architecture review
+- Own capacity and cost for Azure OpenAI quota across eight business units, including PTU allocation and burndown reporting
+- Automate environment provisioning with Bicep and Azure DevOps pipelines
+- Partner with Risk and Compliance to evidence controls for model deployments in a regulated environment
+- Troubleshoot across the stack — when a workload is slow, you determine whether it is the model, the network path, or the AKS node pool
+
+Required
+- 4+ years hands-on with Azure specifically. This is not a role where general cloud experience transfers cleanly; we need someone who knows the quirks of AML pipelines and the AI Search indexing API
+- Azure Kubernetes Service in production
+- Infrastructure as code, Bicep or Terraform
+- Experience operating in a regulated environment with formal change control
+- Microsoft Certified: Azure AI Engineer Associate or Azure Solutions Architect Expert strongly preferred
+
+We are Microsoft-first and expect to stay that way. If you are looking to work across AWS and GCP, this role will frustrate you.

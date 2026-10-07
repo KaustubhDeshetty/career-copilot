@@ -1,0 +1,22 @@
+Software Engineer, Machine Learning
+Tessellate Robotics · Pittsburgh, PA
+
+Tessellate builds warehouse automation. Our robots use perception models trained by our Autonomy team; this role is not on that team.
+
+You will join Deployment Engineering, which is responsible for getting models from the Autonomy team onto 3,000 robots in customer warehouses and keeping them working.
+
+The work
+- Own the model release pipeline: a perception model is approved by Autonomy and must reach a fleet segment safely, with staged rollout and one-command rollback
+- Build the on-robot model monitoring that reports inference latency, confidence distribution shift, and disagreement with a shadow model
+- Package and optimize models for the robot's embedded compute — TensorRT conversion, quantization, and validating that the optimized model matches the original within tolerance
+- Maintain the model registry and the provenance record. When a robot misbehaves in a customer facility we must be able to say exactly which model version it was running and what data trained it
+- Carry the pager for fleet model incidents
+
+You should have
+- 4+ years software engineering, ideally with embedded or edge deployment exposure
+- Experience with model packaging and optimization toolchains
+- Strong CI/CD and release engineering instincts
+- C++ or Python; we use both
+- Calm judgement during incidents involving physical machines in someone else's warehouse
+
+You will not be designing or training perception models. You will be the reason they work in the field.

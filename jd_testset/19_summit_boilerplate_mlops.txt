@@ -1,0 +1,30 @@
+Senior AI/ML Engineer II
+Summit Health Partners · Nashville, TN (Hybrid)
+
+Who We Are
+Summit Health Partners is one of the nation's leading integrated health systems, serving more than 6 million members across 14 states. For over 40 years we have been committed to improving the health of the communities we serve. Our mission is to deliver exceptional, compassionate, affordable care to every person who walks through our doors. We were named to Fortune's Best Workplaces in Healthcare for the fifth consecutive year.
+
+Position Summary
+The Senior AI/ML Engineer II is responsible for supporting the operationalization of machine learning capabilities across the enterprise in alignment with organizational objectives and applicable regulatory requirements.
+
+Essential Duties and Responsibilities
+- Designs, implements, and maintains automated pipelines for the deployment, versioning, and retirement of machine learning models across development, validation, and production environments
+- Establishes and maintains model monitoring capabilities including but not limited to data drift detection, performance degradation alerting, and fairness metric surveillance in accordance with our Responsible AI standard
+- Maintains the enterprise model inventory and supporting documentation required for internal audit and external regulatory examination
+- Implements continuous integration and continuous deployment practices for machine learning assets, including automated validation gates prior to production promotion
+- Collaborates with Data Science, Clinical Informatics, Information Security, and Compliance stakeholders
+- Participates in a shared on-call rotation supporting production inference services
+- Performs other duties as assigned
+
+Minimum Qualifications
+- Bachelor's degree in Computer Science, Engineering, or related field
+- Five (5) years of relevant experience, including three (3) years supporting production machine learning systems
+- Demonstrated proficiency with containerization and orchestration technologies
+- Demonstrated proficiency with CI/CD tooling and infrastructure as code
+- Experience with model lifecycle management tooling
+
+Preferred Qualifications
+- Experience in a healthcare or other regulated environment
+- Familiarity with HIPAA and HITRUST control frameworks
+
+Summit Health Partners is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or protected veteran status. We participate in E-Verify. Summit Health Partners is a tobacco-free workplace. Benefits include medical, dental, vision, 403(b) with employer match, tuition reimbursement, and paid parental leave.

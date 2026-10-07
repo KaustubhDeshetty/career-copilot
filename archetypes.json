@@ -1,0 +1,280 @@
+{
+  "_about": "Hand-written JD classification rubrics for the Apply-mode Selector (Phase 2). These describe the JOB SIDE, not the resume side: the six archetypes are the kinds of role being targeted. Resume text lives in user_profile.json (PII, not version-controlled); this file is prompt-facing and safe to commit. 'vs' names the archetype each one is most often confused with and the single question that breaks the tie.",
+  "_scoring_note": "Scores are relative match strengths, not calibrated probabilities. Do not normalise to 100. Read ordering and gaps.",
+  "archetypes": {
+    "genai": {
+      "label": "Senior Generative AI Engineer",
+      "use_when": "The JD's core deliverable is built on a pretrained foundation model: RAG or agentic systems, prompt/context engineering, fine-tuning or adaptation, evaluation of LLM output quality, or inference cost/latency optimisation. The hard problems named are grounding, hallucination, retrieval quality, context limits, or tokens-per-dollar.",
+      "avoid_when": "LLMs appear once as a nice-to-have ('exposure to GenAI a plus') while the real work is platform operations or classical modelling. Also avoid when the role only calls a vendor chat API with no retrieval, no evaluation and no adaptation -- that is application engineering, not this.",
+      "signals": [
+        "LangGraph",
+        "CrewAI",
+        "DSPy",
+        "RAG",
+        "GraphRAG",
+        "hybrid search",
+        "agentic",
+        "multi-agent",
+        "prompt engineering",
+        "context engineering",
+        "LoRA",
+        "QLoRA",
+        "PEFT",
+        "fine-tuning",
+        "quantization",
+        "vector database",
+        "Pinecone",
+        "pgvector",
+        "embeddings",
+        "hallucination",
+        "Triton",
+        "TensorRT",
+        "tokens per second"
+      ],
+      "vs": [
+        {
+          "archetype": "ml_engineer",
+          "question": "Is the model something you adapt and steer (a foundation model), or something you train from the company's own data? Adapt -> genai. Train -> ml_engineer."
+        },
+        {
+          "archetype": "mlops",
+          "question": "Does the JD ask you to change what the model produces -- retrieval, prompting, fine-tuning, output evaluation -- or only to run it reliably at scale? Change the output -> genai. Run it reliably -> mlops."
+        }
+      ],
+      "summary": "Senior Generative AI Engineer with 11+ years of experience designing and shipping production-grade LLM and agentic AI systems. Specializes in multi-agent orchestration (LangGraph, CrewAI), retrieval-augmented generation (GraphRAG, hybrid search) and fine-tuning/optimization of open-weight and frontier models (LoRA/QLoRA, quantization, distillation). Proven track record of taking generative AI initiatives from prototype to enterprise-scale production, cutting hallucinations, inference cost and latency while improving reliability in regulated environments.",
+      "resume_key": "genai"
+    },
+    "ml_engineer": {
+      "label": "Senior Machine Learning Engineer",
+      "use_when": "The JD makes you accountable for model quality on the company's own data: feature engineering, model selection, hyperparameter search, offline and online evaluation, experiment design. Deep learning or gradient-boosted tabular work both count. The success criterion named is a metric, not an uptime number.",
+      "avoid_when": "No model is trained anywhere in the JD -- the role consumes someone else's models, or the deliverable is the pipeline rather than the predictions. Also avoid when the modelling is entirely LLM adaptation; that is genai.",
+      "signals": [
+        "PyTorch",
+        "TensorFlow",
+        "XGBoost",
+        "LightGBM",
+        "scikit-learn",
+        "Optuna",
+        "hyperparameter tuning",
+        "feature engineering",
+        "model training",
+        "A/B test",
+        "offline evaluation",
+        "ROC-AUC",
+        "F1",
+        "precision",
+        "recall",
+        "model accuracy",
+        "experimentation",
+        "computer vision",
+        "NLP",
+        "forecasting",
+        "recommendation"
+      ],
+      "vs": [
+        {
+          "archetype": "mlops",
+          "question": "Are you judged on how good the model is, or on whether the system around it ships and stays healthy? Model quality -> ml_engineer. System health -> mlops."
+        },
+        {
+          "archetype": "genai",
+          "question": "See genai. A JD titled 'ML Engineer' that never trains anything on company data is usually genai or mlops wearing that title -- score the work described, never the title."
+        }
+      ],
+      "summary": "Senior Machine Learning Engineer with 11+ years of experience building and productionizing ML and deep learning models — from classical gradient-boosted models to deep neural networks, LLM fine-tuning and generative AI systems. Strong foundation in PyTorch/TensorFlow, feature engineering and rigorous experimentation, paired with hands-on production deployment experience across AWS and Azure.",
+      "resume_key": "ml_engineer"
+    },
+    "mlops": {
+      "label": "Senior MLOps / AI Engineer",
+      "use_when": "The JD is about the lifecycle around models rather than the models themselves: CI/CD for ML, model registry and versioning, containerised serving, reproducibility, drift and performance monitoring, automated evaluation gates, on-call ownership of inference services.",
+      "avoid_when": "It is a pure DevOps or SRE role with no ML artefacts in it -- no models, no experiments, no drift. Also avoid when the pipelines described move data rather than models; that is data_platform.",
+      "signals": [
+        "MLflow",
+        "Weights & Biases",
+        "model registry",
+        "model versioning",
+        "CI/CD",
+        "GitHub Actions",
+        "Docker",
+        "Kubernetes",
+        "AKS",
+        "EKS",
+        "FastAPI",
+        "BentoML",
+        "model serving",
+        "inference endpoint",
+        "drift detection",
+        "observability",
+        "Arize",
+        "DeepEval",
+        "evaluation harness",
+        "on-call",
+        "SLA",
+        "uptime",
+        "reproducibility"
+      ],
+      "vs": [
+        {
+          "archetype": "genai",
+          "question": "Does the JD ask you to change what the model produces -- retrieval, prompting, fine-tuning, output evaluation -- or only to run it reliably at scale? Run it reliably -> mlops. Change the output -> genai. LLM-platform JDs land between these two and are a genuine near-tie; report both rather than forcing a winner."
+        },
+        {
+          "archetype": "cloud_ai",
+          "question": "Is the emphasis on practices and tooling regardless of vendor, or on one named cloud's managed AI stack? Practices -> mlops. One cloud's stack -> cloud_ai."
+        }
+      ],
+      "summary": "Senior MLOps/AI Engineer with 11+ years of experience operating the full ML/LLM lifecycle — experiment tracking, CI/CD, observability and auto-scaling production deployment. Deep hands-on expertise with MLflow, Arize Phoenix, Docker/Kubernetes, FastAPI/BentoML and GitHub Actions, with a track record of building reliable, cost-efficient inference platforms for enterprise AI workloads, including large-scale multi-agent LLM systems.",
+      "resume_key": "mlops"
+    },
+    "cloud_ai": {
+      "label": "Senior Cloud AI Engineer",
+      "use_when": "The JD is anchored to one named cloud's AI stack and asks for real depth in it -- SageMaker/Bedrock, Azure ML/Azure AI Search/AKS, or Vertex -- including the surrounding concerns that come with a platform commitment: identity and access, network isolation, compliance boundaries, cost governance, sometimes a named certification.",
+      "avoid_when": "The cloud is merely where the code happens to run and the JD gives it one throwaway line ('AWS or Azure experience'). Depth in the vendor's services is the whole test; incidental hosting is not.",
+      "signals": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "SageMaker",
+        "Bedrock",
+        "Azure Machine Learning",
+        "Azure AI Search",
+        "Azure OpenAI",
+        "Vertex AI",
+        "Synapse",
+        "Databricks",
+        "landing zone",
+        "IAM",
+        "private endpoint",
+        "VPC",
+        "cost optimisation",
+        "FinOps",
+        "AWS Certified",
+        "Azure Certified",
+        "well-architected",
+        "cloud-native"
+      ],
+      "vs": [
+        {
+          "archetype": "mlops",
+          "question": "Is the emphasis on one named cloud's managed AI services and their governance, or on lifecycle practice that would transfer to any vendor? One cloud -> cloud_ai. Transferable practice -> mlops."
+        },
+        {
+          "archetype": "architect",
+          "question": "Do you build on the cloud stack yourself, or specify it for others to build? Build -> cloud_ai. Specify -> architect."
+        }
+      ],
+      "summary": "Senior Cloud AI Engineer with 11+ years of experience architecting and operating AI/ML workloads natively on AWS and Azure — from foundation-model access via SageMaker and Bedrock to auto-scaling Kubernetes deployments. Combines deep cloud infrastructure expertise with hands-on generative AI delivery to build secure, compliant and cost-optimized platforms for enterprise-scale AI.",
+      "resume_key": "cloud_ai"
+    },
+    "data_platform": {
+      "label": "Senior Data & ML Platform Engineer",
+      "use_when": "The JD centres on the data substrate underneath ML: batch and streaming ingestion, lakehouse and warehouse design, table formats and partitioning, distributed processing, pipeline throughput and cost, and making trustworthy data available to model consumers.",
+      "avoid_when": "The JD never leaves model code -- no ingestion, no storage, no pipeline ownership. Also avoid when the role is analytics engineering or BI: built on dbt, a semantic layer, or a reporting layer feeding Looker / Tableau / Power BI, with dashboards and business reviews as the deliverable. That is out_of_space, not data_platform, however much table modelling and data-quality work it involves -- this archetype means lakehouse and streaming infrastructure at scale, not the warehouse's presentation layer.",
+      "signals": [
+        "PySpark",
+        "Spark",
+        "Dask",
+        "Kafka",
+        "Confluent",
+        "Kinesis",
+        "Airflow",
+        "Iceberg",
+        "Delta Lake",
+        "Parquet",
+        "data lake",
+        "lakehouse",
+        "data warehouse",
+        "Redshift",
+        "Snowflake",
+        "Athena",
+        "Glue",
+        "Data Factory",
+        "EMR",
+        "ETL",
+        "ELT",
+        "data quality",
+        "schema evolution",
+        "petabyte",
+        "terabyte",
+        "streaming"
+      ],
+      "vs": [
+        {
+          "archetype": "mlops",
+          "question": "Does the pipeline being built move data, or move models? Data -> data_platform. Models -> mlops."
+        }
+      ],
+      "summary": "Senior Data & ML Platform Engineer with 11+ years of experience building the data and platform foundations that power enterprise ML and generative AI systems — large-scale lakehouses, streaming pipelines, vector stores and self-serve ML infrastructure. Deep experience with PySpark, Kafka, Databricks and Apache Iceberg, alongside cloud-native platform engineering on AWS and Azure supporting high-throughput, low-latency AI workloads.",
+      "resume_key": "data_platform"
+    },
+    "architect": {
+      "label": "Senior AI/ML Solutions Architect",
+      "use_when": "The JD's deliverable is a design others implement: requirements gathering, reference architectures, technology selection and trade-off documents, stakeholder or client-facing work, pre-sales and advisory, cross-team technical influence. Communication and seniority are weighted as heavily as implementation, and the JD usually names years of experience and breadth across the stack.",
+      "avoid_when": "'Architect' is just a seniority label on a hands-on IC role and the day-to-day described is writing the system rather than specifying it. Title alone never qualifies -- look for the design-for-others deliverable.",
+      "signals": [
+        "solution design",
+        "reference architecture",
+        "architecture review",
+        "trade-off",
+        "stakeholder",
+        "client-facing",
+        "pre-sales",
+        "advisory",
+        "roadmap",
+        "technology selection",
+        "cross-functional",
+        "mentor",
+        "technical leadership",
+        "requirements gathering",
+        "proof of concept",
+        "10+ years",
+        "enterprise architecture",
+        "governance"
+      ],
+      "vs": [
+        {
+          "archetype": "cloud_ai",
+          "question": "Is the artefact a decision document others act on, or a running system you own? Document -> architect. System -> cloud_ai."
+        }
+      ],
+      "summary": "Senior AI/ML Solutions Architect with 11+ years of experience architecting enterprise-grade AI/ML platforms end-to-end — from multi-agent LLM systems and RAG architectures to cloud-native ML infrastructure. Skilled at translating business requirements into scalable technical designs across AWS and Azure, and at leading cross-functional delivery of production AI systems with a focus on governance, observability, security and cost efficiency.",
+      "resume_key": "architect"
+    }
+  },
+  "_tie_note": "A near-tie is information, not a failure. When the top two are within ~5 points, say so and name the deciding question from the winner's 'vs' entry rather than presenting the winner as settled. A flat distribution across all six means the JD is outside the target space -- that is the SKIP signal.",
+  "reject_class": {
+    "key": "out_of_space",
+    "label": "Outside the target space",
+    "use_when": "The role's core discipline is something other than the ML / data / AI engineering the six archetypes cover: robotics and perception, quantitative finance research, analytics and business intelligence (including a 'Data Scientist' title over reporting work), frontend or general application engineering, embedded or hardware, security, IT operations, or a non-technical role. Score this HIGH whenever the actual day-to-day work belongs to a different discipline -- even when the posting is technically demanding and full of familiar words. Python, SQL, statistics, models, pipelines and dashboards appear in a great many jobs that are none of the six.",
+    "avoid_when": "The role genuinely is one of the six and merely describes it in unusual words. Vagueness is NOT out-of-space -- a thin posting with no substance is unclassifiable, not foreign.",
+    "signals": [
+      "SLAM",
+      "sensor fusion",
+      "factor graph",
+      "point cloud",
+      "ROS",
+      "C++17",
+      "embedded",
+      "FPGA",
+      "alpha signal",
+      "backtest",
+      "portfolio construction",
+      "market microstructure",
+      "Sharpe",
+      "dbt",
+      "Looker",
+      "Tableau",
+      "Power BI",
+      "semantic layer",
+      "business review",
+      "merchandising",
+      "React",
+      "TypeScript",
+      "frontend",
+      "WCAG",
+      "mobile app",
+      "penetration testing",
+      "help desk"
+    ]
+  }
+}

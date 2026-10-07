@@ -1,0 +1,345 @@
+{
+  "_about": "Gold labels for the Apply-mode Selector test set. Full ranked order of all six archetypes per JD, plus the expected verdict.",
+  "_provenance": "DRAFTED BY ASSISTANT, NOT YET RATIFIED BY KAUSTUBH. The JDs are synthetic and were written by the same assistant that wrote archetypes.json, so a good score here measures internal consistency, not real-world accuracy. A second test set of real postings, labelled independently, is the actual validation. Set _ratified true only after a human review of every rank.",
+  "_ratified": false,
+  "_scoring": "Rank correlation is computed over in-space JDs only. JDs tagged no_match are scored on SKIP detection alone -- their rankings are arbitrary by construction and marked confidence low.",
+  "_archetypes": [
+    "genai",
+    "ml_engineer",
+    "mlops",
+    "cloud_ai",
+    "data_platform",
+    "architect"
+  ],
+  "labels": {
+    "01_helix_genai.txt": {
+      "rank": [
+        "genai",
+        "ml_engineer",
+        "mlops",
+        "data_platform",
+        "cloud_ai",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "clear_case"
+      ],
+      "confidence": "high",
+      "note": "Baseline genai: retrieval grounding, eval harness, PEFT. If this one is not genai the rubric is broken."
+    },
+    "02_northwind_mlops.txt": {
+      "rank": [
+        "mlops",
+        "cloud_ai",
+        "data_platform",
+        "ml_engineer",
+        "genai",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "clear_case"
+      ],
+      "confidence": "high",
+      "note": "Baseline mlops. States outright that no modelling happens. Zero LLM content, so genai should be near the floor."
+    },
+    "03_cassava_data_platform.txt": {
+      "rank": [
+        "data_platform",
+        "cloud_ai",
+        "mlops",
+        "ml_engineer",
+        "genai",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "clear_case"
+      ],
+      "confidence": "high",
+      "note": "Baseline data_platform. 'Not required: machine learning experience' is the disambiguator."
+    },
+    "04_borealis_cloud_ai.txt": {
+      "rank": [
+        "cloud_ai",
+        "mlops",
+        "genai",
+        "architect",
+        "data_platform",
+        "ml_engineer"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "clear_case"
+      ],
+      "confidence": "high",
+      "note": "Baseline cloud_ai. Vendor depth is an explicit gate ('general cloud experience does not transfer')."
+    },
+    "05_lumen_ml_engineer.txt": {
+      "rank": [
+        "ml_engineer",
+        "data_platform",
+        "mlops",
+        "genai",
+        "cloud_ai",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "clear_case"
+      ],
+      "confidence": "high",
+      "note": "Baseline ml_engineer. Names a separate platform team and a separate GenAI team to close off both neighbours."
+    },
+    "06_ridgeline_architect.txt": {
+      "rank": [
+        "architect",
+        "cloud_ai",
+        "genai",
+        "mlops",
+        "data_platform",
+        "ml_engineer"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "clear_case"
+      ],
+      "confidence": "high",
+      "note": "Baseline architect. Client-facing, deliverable is a document, explicitly points ICs elsewhere."
+    },
+    "07_vantage_inference_platform.txt": {
+      "rank": [
+        "mlops",
+        "genai",
+        "cloud_ai",
+        "data_platform",
+        "ml_engineer",
+        "architect"
+      ],
+      "verdict": "STRETCH",
+      "tests": [
+        "hybrid",
+        "near_tie"
+      ],
+      "confidence": "medium",
+      "note": "THE key tie: mlops vs genai. Serving transformers, quantization, KV cache -- genai-flavoured vocabulary doing mlops-flavoured work. Denies training and prompting outright, so the vs rule ('run it reliably -> mlops') should decide it. Expect a small gap; a correct call here should still be reported as a tie."
+    },
+    "08_altair_genai_mle_hybrid.txt": {
+      "rank": [
+        "genai",
+        "ml_engineer",
+        "mlops",
+        "cloud_ai",
+        "data_platform",
+        "architect"
+      ],
+      "verdict": "STRETCH",
+      "tests": [
+        "hybrid",
+        "near_tie"
+      ],
+      "confidence": "medium",
+      "note": "genai vs ml_engineer. Continued pretraining, SFT and DPO on a foundation model (-> genai) alongside genuine discriminative modelling and ablation discipline (-> ml_engineer). Legitimately close."
+    },
+    "09_kestrel_cloudai_mlops_hybrid.txt": {
+      "rank": [
+        "mlops",
+        "cloud_ai",
+        "ml_engineer",
+        "data_platform",
+        "genai",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "hybrid",
+        "near_tie"
+      ],
+      "confidence": "medium",
+      "note": "mlops vs cloud_ai -- the tie the design doc originally predicted. Deliverable is lifecycle (registry, approval gates, monitoring) so mlops leads, but AWS depth is an explicit gate. Should be within a few points."
+    },
+    "10_solstice_dataplatform_mlops_hybrid.txt": {
+      "rank": [
+        "data_platform",
+        "mlops",
+        "ml_engineer",
+        "cloud_ai",
+        "genai",
+        "architect"
+      ],
+      "verdict": "STRETCH",
+      "tests": [
+        "hybrid",
+        "near_tie"
+      ],
+      "confidence": "high",
+      "note": "data_platform vs mlops. A feature platform moves data, not models, so the vs rule puts data_platform first -- but it exists only to serve models, which is what makes it tempting."
+    },
+    "11_beacon_misleading_architect.txt": {
+      "rank": [
+        "genai",
+        "ml_engineer",
+        "mlops",
+        "architect",
+        "cloud_ai",
+        "data_platform"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "misleading_title"
+      ],
+      "confidence": "high",
+      "note": "Titled 'AI Architect', is a hands-on genai IC role, and says so explicitly in the last paragraph. A title-reading model puts architect first. Gold puts it fourth."
+    },
+    "12_orchard_misleading_ds.txt": {
+      "rank": [
+        "data_platform",
+        "ml_engineer",
+        "mlops",
+        "cloud_ai",
+        "genai",
+        "architect"
+      ],
+      "verdict": "SKIP",
+      "tests": [
+        "misleading_title",
+        "no_match"
+      ],
+      "confidence": "high",
+      "note": "Titled 'Data Scientist', is analytics engineering. Out of the target space entirely. Ranking order below the top is near-arbitrary -- the signal being tested is that every score is LOW."
+    },
+    "13_tessellate_misleading_swe.txt": {
+      "rank": [
+        "mlops",
+        "ml_engineer",
+        "cloud_ai",
+        "data_platform",
+        "genai",
+        "architect"
+      ],
+      "verdict": "STRETCH",
+      "tests": [
+        "misleading_title",
+        "signal_trap"
+      ],
+      "confidence": "high",
+      "note": "Model release engineering for a robot fleet: registry, staged rollout, provenance, pager -> mlops. SIGNAL TRAP: TensorRT and quantization sit in genai's signal list but there is no LLM anywhere in this JD. If genai ranks high here, the signal list is leaking."
+    },
+    "14_atlas_architect_cloud_boundary.txt": {
+      "rank": [
+        "architect",
+        "cloud_ai",
+        "mlops",
+        "genai",
+        "data_platform",
+        "ml_engineer"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "hybrid",
+        "near_tie"
+      ],
+      "confidence": "medium",
+      "note": "architect vs cloud_ai at an AWS partner. Deep AWS content throughout, but the deliverable is a document and hands-on is stated as 20%. The vs rule should carry it."
+    },
+    "15_verity_nomatch_robotics.txt": {
+      "rank": [
+        "ml_engineer",
+        "mlops",
+        "genai",
+        "data_platform",
+        "cloud_ai",
+        "architect"
+      ],
+      "verdict": "SKIP",
+      "tests": [
+        "no_match"
+      ],
+      "confidence": "high",
+      "note": "Robotics perception: SLAM, factor graphs, C++17, flight line. The canonical no-match. Order below first place is arbitrary; flatness and low absolute scores are the whole test."
+    },
+    "16_pinnacle_nomatch_frontend.txt": {
+      "rank": [
+        "mlops",
+        "ml_engineer",
+        "genai",
+        "data_platform",
+        "cloud_ai",
+        "architect"
+      ],
+      "verdict": "SKIP",
+      "tests": [
+        "no_match"
+      ],
+      "confidence": "low",
+      "note": "Frontend React role, maximally out of space. Ranking here is meaningless by construction and is excluded from rank correlation -- included so SKIP detection has an unambiguous case."
+    },
+    "17_windward_nomatch_quant.txt": {
+      "rank": [
+        "ml_engineer",
+        "data_platform",
+        "genai",
+        "mlops",
+        "cloud_ai",
+        "architect"
+      ],
+      "verdict": "SKIP",
+      "tests": [
+        "no_match",
+        "near_miss"
+      ],
+      "confidence": "medium",
+      "note": "Quant research. The hardest no-match: real modelling rigour, backtests, statistics -- ml_engineer should lead the ranking and still be low enough in absolute terms to trigger SKIP. Tests that ordering and level are separate signals."
+    },
+    "18_recruiter_vague.txt": {
+      "rank": [
+        "mlops",
+        "genai",
+        "cloud_ai",
+        "ml_engineer",
+        "data_platform",
+        "architect"
+      ],
+      "verdict": "STRETCH",
+      "tests": [
+        "low_information"
+      ],
+      "confidence": "low",
+      "note": "Recruiter spam. Names LLMs, cloud and MLOps with no content behind any of them. Expected behaviour is a FLAT, MID distribution -- and the ranking is not the point. Must be distinguishable from #20, which should be flat and HIGH."
+    },
+    "19_summit_boilerplate_mlops.txt": {
+      "rank": [
+        "mlops",
+        "cloud_ai",
+        "ml_engineer",
+        "data_platform",
+        "genai",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "noise"
+      ],
+      "confidence": "high",
+      "note": "Real mlops role buried under 200 words of mission statement, EEO text and benefits. Tests whether boilerplate dilutes the signal."
+    },
+    "20_junction_generalist.txt": {
+      "rank": [
+        "genai",
+        "mlops",
+        "cloud_ai",
+        "ml_engineer",
+        "data_platform",
+        "architect"
+      ],
+      "verdict": "APPLY",
+      "tests": [
+        "hybrid",
+        "flat_high"
+      ],
+      "confidence": "medium",
+      "note": "Founding engineer doing everything: agent reliability, retrieval, eval, autoscaling inference, deploy pipeline, fine-tuning a classifier. Genuinely broad. Should be flat and HIGH -- the paired case to #18. If the system cannot tell 'no signal' from 'all signals', the flat-distribution SKIP rule is unsafe."
+    }
+  }
+}

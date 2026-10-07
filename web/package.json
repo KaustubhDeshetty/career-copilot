@@ -1,0 +1,29 @@
+{
+  "name": "career-copilot-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js + TypeScript front end for Career Copilot (multi-agent job-search assistant)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "dependencies": {
+    "next": "15.5.27",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,25 @@
+Founding AI Engineer
+Junction · San Francisco, CA (Onsite, 5 days)
+
+Junction is eleven people. We build an AI agent that handles inbound support email for e-commerce brands — reads the message, looks up the order, decides what to do, and either acts or escalates. We have 60 paying customers and are growing faster than we can staff.
+
+This is a founding engineering role. There is no platform team, no infra team, and no one to hand things to.
+
+In a given month you might
+- Improve the agent's tool-use reliability, which is currently our largest source of escalations
+- Rebuild the retrieval over customer help-center content because the current chunking loses table structure
+- Set up proper evaluation, which we do not have and badly need
+- Move our inference off a single overloaded GPU box onto something that autoscales
+- Debug a customer-specific integration with a Shopify webhook at 11pm
+- Build the deployment pipeline, because right now Ana deploys by SSH
+- Fine-tune a small classifier so we stop paying frontier-model prices for intent detection
+- Talk to customers directly about what is going wrong
+
+What we need
+- 5+ years engineering with real production ownership
+- You have shipped something with an LLM in the loop and know where they break
+- Comfortable across the stack — you can stand up infrastructure, write the application, and reason about model behavior
+- High tolerance for ambiguity and unglamorous work
+- You want the scope more than you want the specialization
+
+Equity is meaningful. Base is not competitive with big tech and we will be upfront about that.

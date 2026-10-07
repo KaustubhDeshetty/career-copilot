@@ -1,0 +1,23 @@
+Principal AI Architect
+Atlas Cloud Partners · Denver, CO (Remote, travel 25%)
+
+Atlas is an AWS Premier Partner. We help enterprise customers land AI workloads on AWS, from first architecture through production.
+
+The role sits between our sales organization and our delivery teams.
+
+Responsibilities
+- Lead architecture engagements with enterprise customers: assess the current state, design the target AWS architecture, and produce a migration or build plan the customer's own teams can execute
+- Author reference architectures and well-architected reviews for AI workloads on AWS — Bedrock, SageMaker, and the surrounding data and security services
+- Support pre-sales as the senior technical voice: scoping calls, proposal defense, and the occasional rescue of a deal that has gone technical
+- Build reusable delivery assets — patterns, accelerators, and opinionated defaults our consultants apply across engagements
+- Advise customers on the decisions that are expensive to reverse: data residency, account topology, model hosting strategy, cost structure
+- Mentor solution architects across the practice
+
+Requirements
+- 10+ years, with 5+ designing on AWS at enterprise scale
+- Deep AWS AI and data services knowledge; AWS Solutions Architect Professional and a machine learning specialty certification expected
+- Proven customer-facing consulting experience at the executive level
+- Excellent written communication — the architecture document is the product
+- Willingness to travel to customer sites
+
+Hands-on implementation is roughly 20% of this role. If you want to be writing production code most days, this is not it, and we will tell you that in the first interview rather than the fourth.

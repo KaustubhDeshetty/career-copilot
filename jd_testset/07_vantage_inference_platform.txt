@@ -1,0 +1,24 @@
+Staff Engineer, Inference Platform
+Vantage Labs · San Francisco, CA (Hybrid)
+
+Vantage Labs runs a hosted platform for enterprises deploying open-weight language models in their own cloud accounts. We serve about 900 million tokens a day across customer deployments.
+
+The team
+Inference Platform owns everything between a customer selecting a model and that model answering requests under contract. We are eight engineers.
+
+What you'd own
+- Model serving at scale: vLLM-based inference, continuous batching, KV cache management, tensor parallelism across multi-GPU nodes
+- Latency and cost. Our contracts specify p95 time-to-first-token and we are penalized for breaches. Reducing cost per million tokens is a standing objective
+- Quantization and compilation work — we ship AWQ and FP8 variants and evaluate whether the quality loss is acceptable per customer
+- The deployment and rollout system: canaries, automatic rollback on quality or latency regression, multi-region
+- On-call for a platform with a 99.9% availability commitment
+- Capacity planning against a GPU fleet we cannot instantly grow
+
+What we need
+- 6+ years systems or infrastructure engineering
+- Direct experience serving transformer models in production. Familiarity with the memory behavior of attention at long context is assumed
+- Kubernetes and GPU scheduling
+- Strong debugging under production pressure
+- Python; CUDA or Triton kernel familiarity is a real plus
+
+Not this role: we do not train models here, and prompt design belongs to our customers. This is a systems job about making other people's models fast, cheap, and reliably available.

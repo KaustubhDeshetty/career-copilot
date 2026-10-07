@@ -1,0 +1,23 @@
+AI Solutions Architect
+Ridgeline Consulting Group · Chicago, IL (Travel up to 40%)
+
+Ridgeline advises Fortune 1000 clients on data and AI strategy and delivery. We are growing our AI Solutions Architecture practice.
+
+The role
+You are the person in the room when a client decides what to build. You will:
+
+- Run discovery with client stakeholders — business, technical, risk — and turn ambiguous goals into a scoped, defensible architecture
+- Produce the artifacts that get funded: reference architectures, option analyses with explicit trade-offs, cost models, and phased delivery roadmaps
+- Present to executive audiences, including skeptical ones. You will defend a recommendation to a CIO who has been pitched three other things this quarter
+- Support pre-sales: shape statements of work, size engagements, and contribute to proposals
+- Set technical direction for delivery teams of 4-12 engineers, and review their designs. You will not be writing the bulk of the implementation
+- Mentor consultants and grow the practice's point of view on AI architecture patterns
+
+What you bring
+- 10+ years in technology with meaningful breadth — you have credible opinions across data platforms, ML systems, and generative AI, and you know where each is oversold
+- Demonstrated client-facing experience. Comfort with a room that disagrees with you
+- Experience across at least two major clouds; strong opinions on when managed services are the wrong answer
+- Ability to write clearly. Our deliverables are documents and they are what clients pay for
+- Consulting or in-house architecture background both fine
+
+This is a senior, externally-facing role. If your preference is deep individual implementation work, our Principal Engineer track is a better fit and we would happily point you there.

@@ -1,0 +1,23 @@
+Senior Data Platform Engineer
+Cassava Retail Group · Atlanta, GA
+
+About the team
+Cassava operates 1,200 stores and an e-commerce channel. The Data Platform team owns the lakehouse that every analytics, reporting, and ML workload in the company reads from. We ingest roughly 4TB per day from point-of-sale, web clickstream, inventory, and third-party marketing sources.
+
+The role
+You will own ingestion and storage design for a platform with several hundred internal consumers.
+
+- Build and operate batch and streaming ingestion pipelines. Our streaming side is Kafka into Spark Structured Streaming; batch is Airflow-orchestrated Spark
+- Own our Iceberg table design — partitioning, compaction, schema evolution, and the migration of remaining Hive tables
+- Drive down cost. Our EMR spend grew 60% last year against 20% data growth and we need someone who treats that as a bug
+- Build the contracts and data quality checks that let downstream teams trust a table without asking us first
+- Support the ML teams' feature pipelines, which sit on top of the same lakehouse
+
+You should have
+- 5+ years building data pipelines at terabyte-plus daily scale
+- Deep Spark. Not "I've used PySpark" — you can read a query plan and explain why a stage spilled
+- Production streaming experience, Kafka or Kinesis
+- Strong SQL and dimensional modeling instincts
+- AWS (we run EMR, S3, Glue Catalog, Athena)
+
+Not required: machine learning experience. You will serve ML teams but you will not be training models.

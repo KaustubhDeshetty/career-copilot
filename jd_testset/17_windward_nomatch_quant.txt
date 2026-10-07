@@ -1,0 +1,20 @@
+Quantitative Researcher, Systematic Equities
+Windward Capital Management · Greenwich, CT (Onsite)
+
+Windward runs systematic strategies across global equities. The Systematic Equities pod is hiring a researcher to develop new alpha signals.
+
+The work
+- Research and develop predictive signals from fundamental, market microstructure, and alternative datasets
+- Design and defend backtests. Our review process is adversarial by design — you will be asked to prove you have not overfit, and "the Sharpe was 2.1" is the beginning of that conversation, not the end
+- Onboard and evaluate new alternative datasets, including determining whether a vendor's claimed history is point-in-time or has survivorship contamination
+- Work with the portfolio construction team on how signals combine, decay, and interact with transaction costs
+- Monitor live signal performance against research expectations and diagnose decay
+
+Requirements
+- PhD or MS in a quantitative discipline — statistics, physics, mathematics, econometrics, or similar
+- Strong statistical foundations. You understand multiple hypothesis testing, and you have opinions about how most published backtests are wrong
+- Python and a scientific stack; kdb+/q or C++ exposure useful
+- Experience with financial time series and their specific pathologies — non-stationarity, regime change, fat tails
+- Prior buy-side research experience preferred but exceptional candidates from academia or adjacent fields will be considered
+
+Compensation is highly variable and performance-linked. Base $200,000-$275,000 with a discretionary bonus that is typically the larger component.
